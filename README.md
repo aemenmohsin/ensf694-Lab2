@@ -1,7 +1,7 @@
 # a0-classroom
 A repository to practice github steps.
 
-Author: Yves Pauchard
+Author: Aemen Mohsin
 
 # What to do
 1. Clone this repository to your local computer.
