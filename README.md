@@ -18,7 +18,7 @@ Author: Aemen Mohsin
 Note that `README.md` is a markdown file. Special syntax takes care of formatting. There are many cheat-sheets online to get you started. Here is one: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
 # How to run the program
-The Java program `src/HelloWorld.java` greets the world. To run from command line, first compile with `javac -sourcepath src/ -d bin/ src/HelloWorld.java` and run with `java -cp bin/ HelloWorld`. See screenshot below for an example terminal session.
+The Java program `src/HelloWorld.java` greets me. To run from command line, first open the directory: 'mohsi@LAPTOP-SJCDPORL MINGW64 /d/Aemen/Masters/Spring/ENSF-593/Assignments/a0-classroom-aemenmohsin/src' then compile with `javac HelloWorld.java` and run with `java HelloWorld`. See screenshot below for an example terminal session.
 
 Alternatively, in Eclipse, right-click on `HelloWorld.java` in the `Package Explorer` and select `Run As->Java Application`.
 ![Example screenshot](screenshot.png)
