@@ -41,21 +41,34 @@ public class Lab2
 	 */
 	public static int interpolSearch(int[] array, int key) 
 	{
-	    int low = 0, mid, pos;
+	    int low = 0;
 	    int high = array.length - 1;
 
-	    //while (low <= high && key >= array[low] && key <= array[high]) 
-	    while (low <= high)
+	    while (low <= high && key >= array[low] && key <= array[high])
 	    {
-	        pos = key - array[low] / (array[high] - array[low]);
-	        mid = low + (high - low) * pos;
+	    	if (low == high) 
+	    	{
+                if (array[low] == key) 
+                {
+                    return low;
+                }
+                return -1; // Key not found
+            }
+	    	double pos = (double) (key - array[low] / (array[high] - array[low]));
+	        int mid = (int) (low + Math.abs((high - low) * pos));
 
 	        if(key < array[mid])
+	        {
 	        	high = mid - 1;
+	        }
 	        else if(array[mid] < key)
+	        {
 	        	low = mid + 1;
+	        }
 	        else
+	        {
 	        	return mid;
+	        }
 	    }
 
 	    return -1; // Key not found
@@ -77,7 +90,8 @@ public class Lab2
 	    {
 	        array[i] = scanner.nextInt();
 	    }
-	    array[] = Arrays.sort();
+	    
+	    Arrays.sort(array);
 	    
 	    System.out.print("Enter the search key: ");
 	    int key = scanner.nextInt();
@@ -107,3 +121,5 @@ public class Lab2
 	    }
     }
 }
+
+
